@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Encode {
+	
+	public static void main(String[] args) {
+		
+	String a1,sb2;
+	char c1;
+		
+	Scanner sc= new Scanner(System.in);
+	System.out.print("Input String : ");
+	a1=sc.nextLine();
+	b2=a1.toUpperCase();
+	
+	sc.close();
+	
+	for(int i=b2.length()-1;i>=0;i--){
+		c1=b2.charAt(i);
+		
+		if(c1=='R'){
+			c1='E';
+		}
+		else if(c1=='W'){
+			c1='R';
+		}
+		else if(c1=='E'){
+			c1='W';
+		}
+		System.out.print(c1);
+	}
+  }
+}
